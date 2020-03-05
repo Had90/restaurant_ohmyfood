@@ -16,8 +16,16 @@ body{
     display: flex;
     flex-direction: column;
 }
+header{    
+    background-color: rgb(17, 126, 99);
+    opacity: 0.7;
+    left: 0; right: 0; top: 0;
+    display: flex;
+    justify-content: center;
+}
 .fas{
-    color: rgb(231, 125, 125);   
+    color: rgb(231, 125, 125); 
+    font-size: 2em;  
 }
 .btn{
     width: 15%;
@@ -103,44 +111,94 @@ section{
     margin-bottom: inherit;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
 }
-.menu h3{
+/*Titres*/
+h1{
+    font-family: 'Prompt', sans-serif;
+    color: rgb(238, 171, 28);
+}
+.menu1 h3{
     margin: 0;
+    font-family: 'Itim', sans-serif;
+}
+.menu2 h3{
+    margin: 0;
+    font-family: 'PT Serif', sans-serif;
+}
+.menu3 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
+}
+.menu4 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
 }
 .menu1{
     font-family: 'La Belle Aurore', sans-serif;
-    background-color:rgb(248, 218, 218);      
+    background-color:rgb(248, 218, 218); 
+    color: #000;    
 }
 .menu2{
     font-family: 'Croissant One', sans-serif;
     background-color: rgb(250, 239, 250);
 }
 .menu3{
-    background-color: #F5F5F5;
-    font-family: 'Dancing Script', sans-serif;     
+    font-family: 'Dancing Script', sans-serif;   
+    background-color: rgb(245, 245, 245);  
 }
 .menu4{
-    background-color: white;
-    font-family: 'Kaushan Script', sans-serif;     
+    font-family: 'Kaushan Script', sans-serif; 
+    background-color: #fff;    
 }
-   
-/*Titres*/
-h1{
-    font-family: 'Prompt', sans-serif;
-    color: rgb(238, 171, 28);
-}
+/*Dégradé de couleurs*/
+.gradient {
+    font-size: 1em;
+    display: inline-block;
+    background: transparent;
+    color: black;
+    position: relative;
+  }
+  
+  .gradient::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(left, #808, #008);
+    background: linear-gradient(to right, #808, #008);
+    content: '';
+    display: block;
+    mix-blend-mode: screen;
+  }
 
-h3{
-    font-family: 'Prompt', sans-serif;
+/*2. PARTIE DESCRIPTION MENU*/
+.menu_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 700px;
+    height: 900px;
+    margin-bottom: inherit;
+    margin-top: 0;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    font-family: 'La Belle Aurore', sans-serif;
+    background-color:rgb(248, 218, 218);     
 }
-
-/*2. PARTIE DU HAUT (HEADER)*/
-header{    
-    background-color: rgb(17, 126, 99);
-    opacity: 0.7;
-    left: 0; right: 0; top: 0;
+.menu_one h4{
+    font-family: 'Kalam', sans-serif;
+}
+.menu_one hr{
+    border: 1px solid black;
+    width: 16%;
+}
+h2{
     display: flex;
     justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 1%;
 }
+
 
 /*3. PARTIE DU BAS (FOOTER)*/
 footer{

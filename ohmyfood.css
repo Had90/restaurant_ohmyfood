@@ -1,13 +1,12 @@
 /*SOMMAIRE
 -------------------------------------------------------
-1. MISE EN PAGE GÉNÉRALE 
-2. PARTIE DU HAUT (HEADER)
-3. PARTIE DU BAS (FOOTER)
-4. RESPONSIVE DESIGN
+1. PAGE DE GARDE 
+2. MENU 1, MENU 2, MENU 3, MENU 4
+3. RESPONSIVE DESIGN
 */
 
 
-/*1.MISE EN PAGE GÉNÉRALE*/
+/*1.PAGE DE GARDE*/
 body{
     width: 100%;
     margin: auto;
@@ -21,12 +20,14 @@ header{
     opacity: 0.7;
     left: 0; right: 0; top: 0;
     display: flex;
+    flex: 1;
     justify-content: center;
 }
 .fas{
     color: rgb(231, 125, 125); 
     font-size: 2em;  
 }
+/*Animation du bouton*/
 .btn{
     width: 15%;
     height: 35px;
@@ -62,14 +63,14 @@ header{
     50%  { content: '..'; }
     75%  { content: '...'; }
     100% { content: ''; }
-  }
-  /*Animation qui fait zoom sur l'image*/
-  .menu1{
-    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+}
+/*Animation du zoom sur l'image*/
+.menu1{
+    /*La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde.*/
     transition: all 1s ease;
     }
     .menu1:hover {
-    /* L'image est grossie de 25% */
+    /*L'image est grossie de 25%*/
     transform:scale(1.25);
     }
     .menu2{
@@ -98,38 +99,27 @@ section{
     display: flex;
     flex-flow: wrap row; 
     justify-content: space-around;
-    margin: 70px;
+    margin: 80px 135px 80px 135px;
 }
 .menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    width: 450px;
-    height: 550px;
+    width: 410px;
+    height: 510px;
     margin-bottom: inherit;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
 }
-/*Titres*/
+/*Titres et mise en page*/
 h1{
     font-family: 'Prompt', sans-serif;
     color: rgb(238, 171, 28);
 }
-.menu1 h3{
-    margin: 0;
-    font-family: 'Itim', sans-serif;
-}
-.menu2 h3{
-    margin: 0;
-    font-family: 'PT Serif', sans-serif;
-}
-.menu3 h3{
-    margin: 0;
-    font-family: 'Kalam', sans-serif;
-}
-.menu4 h3{
-    margin: 0;
-    font-family: 'Kalam', sans-serif;
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
 }
 .menu1{
     font-family: 'La Belle Aurore', sans-serif;
@@ -146,11 +136,29 @@ h1{
     font-family: 'Dancing Script', sans-serif;   
     background-color: rgb(245, 245, 245);  
     font-size: 2em;
+    margin-bottom: 0;
 }
 .menu4{
     font-family: 'Kaushan Script', sans-serif; 
     background-color: #fff;  
-    font-size: 2em;  
+    font-size: 2em; 
+    margin-bottom: 0; 
+}
+.menu1 h3{
+    margin: 0;
+    font-family: 'Itim', sans-serif;
+}
+.menu2 h3{
+    margin: 0;
+    font-family: 'PT Serif', sans-serif;
+}
+.menu3 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
+}
+.menu4 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
 }
 /*Dégradé de couleurs*/
 .gradient {
@@ -173,40 +181,7 @@ h1{
     display: block;
     mix-blend-mode: screen;
   }
-
-/*2. PARTIE DESCRIPTION MENU*/
-.menu_one{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    width: 800px;
-    height: 950px;
-    margin-bottom: inherit;
-    margin-top: 0;
-    box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    font-family: 'La Belle Aurore', sans-serif;
-    background-color:rgb(248, 218, 218);     
-}
-.menu_one h4{
-    font-family: 'Kalam', sans-serif;
-}
-.menu_one hr{
-    border: 1px solid black;
-    width: 16%;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-}
-h2{
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5em;
-    margin-bottom: 1%;
-}
-
-
-/*3. PARTIE DU BAS (FOOTER)*/
+/*Footer*/
 footer{
     background-color: rgb(17, 126, 99);;
     opacity: 0.7;
@@ -233,6 +208,54 @@ article ul:nth-child(1){
     margin-left: 70px;
 }
 
+/*2.MENU 1*/
+.menu_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 800px;
+    height: 950px;
+    margin-bottom: inherit;
+    margin-top: 0;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    font-family: 'La Belle Aurore', sans-serif;
+    background-color:rgb(248, 218, 218);     
+}
+.menu_one h3{
+    font-family: 'Itim', sans-serif;
+}
+.menu_one hr{
+    border: 1px solid black;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.page{
+    margin-top: 0;
+    margin-bottom: 65px;
+}
+/*MENU 2*/
+.menu_two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 800px;
+    height: 700px;
+    margin-bottom: inherit;
+    margin-top: 0;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    background-color:rgb(250, 239, 250);     
+}
+.menu_two hr{
+    border: 1px solid black;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 
 /*4. RESPONSIVE DESIGN*/
 @media screen and (min-width: 1981px) {
@@ -243,22 +266,29 @@ article ul:nth-child(1){
         display: flex;
     }
     section{
-        flex:4;
+        flex:2;
     }
-    aside {
+    header{
         flex:1;
     }
-    article {
+    article{
         box-shadow: 0px 0px 10px 0px rgba(199,199,199,1);
-        margin-right: 30px;
+        margin-right: 10px;
         border-radius:7px;
         padding: 30px;
     }
 }
-/* Masquer la photo du header sur écran > que les tablettes */
-@media screen and (min-width: 900px) {
-    header img{
-        display:none;
+/* Tablettes pro */
+@media screen and (max-width: 1336px) {
+    body{
+        max-width: 100%;
+    }
+    header{
+        text-align: center;
+        padding-top:30px;
+    }
+    footer{
+
     }
 }
 /* Tablettes */
@@ -266,70 +296,36 @@ article ul:nth-child(1){
     #container{
         flex-direction: column;
     }
-    h1{
-        font-size:3.4em;
-        margin-top:50px;
-    }
-    section{
-        padding:20px;
-    }
-    article ul:nth-child(2){
-        margin-right:0;
-    }
-    address{
-        display: flex;
-    }
     header{
         text-align: center;
         padding-top:30px;
     }
-    header hr{
-        display:flex;
-        margin:auto;
-    }
-    header img{
-        border-radius: 300px;
-        display: flex;
-        margin: auto;
-    }
-    aside{
-        padding-top: 0;
-    }
-    aside h3:first-child{
+    h1{
+        font-size:2em;
         margin-top: 0;
     }
-    aside img{
-        display: none;
+    section{
+        margin: 25px;
+    }
+    footer{
+
     }
 }
 
 /* Téléphone */
 @media screen and (max-width: 425px) {
-    .part_right {
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 0px 10px 0px rgba(199,199,199,1);
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius:7px;
-    }
-    header {
-        margin-bottom: 50px;
-    }
-    h1 {
-        font-size: 2.2em;
-    }  
-    .text_recommandations div {
-        flex-direction: column;
-        box-shadow: 0px 0px 10px 0px rgba(199,199,199,1);
-        padding: 10px;
-        margin-bottom: 15px;
-        border-radius:7px;
-    }
-    address{
+    #container{
         flex-direction: column;
     }
-    header img{
-        max-width:150px;
+    header{
+        text-align: center;
+        padding-top:30px;
+    }
+    h1{
+        font-size:2em;
+        margin-top: 0;
+    }
+    .btn{
+        padding: 30px;
     }
 }

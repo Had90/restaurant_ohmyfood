@@ -256,6 +256,26 @@ article ul:nth-child(1){
     justify-content: space-between;
     align-content: center;
 }
+/*MENU 3*/
+.menu_three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 800px;
+    height: 700px;
+    margin-bottom: inherit;
+    margin-top: 0;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    background-color:rgb(245, 245, 245);     
+}
+.menu_three hr{
+    border: 1px solid black;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 
 /*4. RESPONSIVE DESIGN*/
 @media screen and (min-width: 1981px) {

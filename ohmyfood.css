@@ -19,8 +19,7 @@ header{
     background-color: rgb(17, 126, 99);
     opacity: 0.7;
     margin: 0 0 0 0;
-    display: flex;
-    justify-content: center;
+    height: 70px;
 }
 .fas{
     color: rgb(231, 125, 125); 
@@ -111,16 +110,25 @@ section{
     margin-bottom: inherit;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
 }
-/*Titres et mise en page*/
-h1{
-    font-family: 'Prompt', sans-serif;
-    color: rgb(238, 171, 28);
+span, p{
+    display: flex;
+    
 }
-h2{
+/*Titres et mise en page*/
+
+.index1{
+    font-family: 'Prompt', sans-serif;
     display: flex;
     justify-content: center;
-    margin-top: 1.5em;
+    margin: 0 0 0;
 }
+
+.index{
+    font-family: 'Prompt', sans-serif;
+   
+    margin: 0 0 0;
+}
+
 .menu1{
     font-family: 'La Belle Aurore', sans-serif;
     background-color:rgb(248, 218, 218); 
@@ -189,11 +197,12 @@ footer{
 div ul{
     list-style-type: none;
     padding-left: 0px;
+    padding-top: 5px;
     font-weight: 400;
 }
-div ul li:nth-child(4){
+/*div ul li:nth-child(4){
     font-weight: 200;
-}
+}*/
 div ul:nth-child(2){
     margin-right: 70px;
 }

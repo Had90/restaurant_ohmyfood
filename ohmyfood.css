@@ -18,9 +18,8 @@ body{
 header{    
     background-color: rgb(17, 126, 99);
     opacity: 0.7;
-    left: 0; right: 0; top: 0;
+    margin: 0 0 0 0;
     display: flex;
-    flex: 1;
     justify-content: center;
 }
 .fas{
@@ -37,9 +36,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00897B;
+    background-color: rgb(17, 126, 99);
     border-radius: 15px;
     box-shadow: 1px 1px 12px #555;
+    color: rgb(238, 171, 28);
 }
 .btn:after {
     display: inline-block;
@@ -147,10 +147,12 @@ h2{
 .menu1 h3{
     margin: 0;
     font-family: 'Itim', sans-serif;
+    text-transform: uppercase;
 }
 .menu2 h3{
     margin: 0;
     font-family: 'PT Serif', sans-serif;
+    color: rgb(197, 171, 85);
 }
 .menu3 h3{
     margin: 0;
@@ -160,27 +162,18 @@ h2{
     margin: 0;
     font-family: 'Kalam', sans-serif;
 }
+/*p{
+    display: flex;
+    text-align: left;
+}*/
 /*Dégradé de couleurs*/
 .gradient {
-    font-size: 1em;
-    display: inline-block;
-    background: transparent;
-    color: black;
-    position: relative;
-  }
-  
-  .gradient::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: -webkit-linear-gradient(left, #808, #008);
-    background: linear-gradient(to right, #808, #008);
-    content: '';
-    display: block;
-    mix-blend-mode: screen;
-  }
+    font-size: 1.2em;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, rgb(189, 150, 150) 50%, rgba(198, 86, 243, 1));
+}
+
 /*Footer*/
 footer{
     background-color: rgb(17, 126, 99);;
@@ -213,7 +206,7 @@ div ul:nth-child(1){
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
     width: 800px;
     height: 950px;
     margin-bottom: inherit;
@@ -224,17 +217,12 @@ div ul:nth-child(1){
 }
 .menu_one h3{
     font-family: 'Itim', sans-serif;
-}
-.menu_one hr{
-    border: 1px solid black;
-    width: 16%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    margin: 0 0 0;
 }
 .page{
     margin-top: 0;
     margin-bottom: 65px;
+    font-size: 1.1em;
 }
 /*MENU 2*/
 .menu_two{
@@ -247,7 +235,8 @@ div ul:nth-child(1){
     margin-bottom: inherit;
     margin-top: 0;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    background-color:rgb(250, 239, 250);     
+    background-color:rgb(250, 239, 250); 
+    font-family: 'Croissant One', sans-serif;   
 }
 .menu_two hr{
     border: 1px solid black;
@@ -276,6 +265,59 @@ div ul:nth-child(1){
     justify-content: space-between;
     align-content: center;
 }
+/*MENU 4*/
+.menu_four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 800px;
+    height: 700px;
+    margin-bottom: inherit;
+    margin-top: 0;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    background-color:rgb(245, 245, 245);     
+}
+.menu_four hr{
+    border: 1px solid black;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+/*Soulignement au survol de la souris*/
+.page a {
+    display: inline;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+.page a:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+width: 0%;
+left: 0px;
+height: 2px;
+transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+background: #000;
+}
+.page a:hover:after {
+    width: 100%;
+}
+/*Insertion des traits gauche et droite*/
+.page h3:before, .page h3:after {
+    content:''; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 8rem; 
+    height: 2px; 
+    background: #000;
+}
+.page h3:before { margin-right: 3rem }
+.page h3:after { margin-left: 3rem }
+
 
 /*4. RESPONSIVE DESIGN*/
 @media screen and (min-width: 1981px) {
@@ -295,7 +337,7 @@ div ul:nth-child(1){
         box-shadow: 0px 0px 10px 0px rgba(199,199,199,1);
         margin-right: 10px;
         border-radius:7px;
-        padding: 30px;
+        padding: 0;
     }
 }
 /* Tablettes pro */
@@ -307,8 +349,9 @@ div ul:nth-child(1){
         text-align: center;
         padding-top:30px;
     }
-    footer{
-
+    .foot div{
+        display: flex;
+        justify-content: space-between;
     }
 }
 /* Tablettes */
@@ -327,8 +370,9 @@ div ul:nth-child(1){
     section{
         margin: 25px;
     }
-    footer{
-
+    .foot div{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -339,13 +383,18 @@ div ul:nth-child(1){
     }
     header{
         text-align: center;
-        padding-top:30px;
     }
     h1{
         font-size:2em;
         margin-top: 0;
     }
+    .foot div{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
     .btn{
-        padding: 30px;
+        padding: 6px 35px;
     }
 }

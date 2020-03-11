@@ -110,23 +110,26 @@ section{
     margin-bottom: inherit;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
 }
-span, p{
-    display: flex;
-    
-}
-/*Titres et mise en page*/
 
+/*Titres et mise en page*/
 .index1{
     font-family: 'Prompt', sans-serif;
     display: flex;
     justify-content: center;
     margin: 0 0 0;
 }
-
 .index{
     font-family: 'Prompt', sans-serif;
-   
     margin: 0 0 0;
+}
+h1{
+    font-family: 'Itim', sans-serif;
+}
+p{
+    display: block;
+    justify-content: space-between;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.7em;
 }
 
 .menu1{
@@ -160,28 +163,43 @@ span, p{
 .menu2 h3{
     margin: 0;
     font-family: 'PT Serif', sans-serif;
-    color: rgb(197, 171, 85);
+    color: rgb(207, 106, 47);
 }
 .menu3 h3{
     margin: 0;
     font-family: 'Kalam', sans-serif;
+    color: rgb(67, 141, 226);
 }
 .menu4 h3{
     margin: 0;
     font-family: 'Kalam', sans-serif;
+    color: rgb(107, 207, 165);
 }
-/*p{
-    display: flex;
-    text-align: left;
-}*/
 /*Dégradé de couleurs*/
-.gradient {
-    font-size: 1.2em;
+.gradient1 {
+    font-size: 1.1em;
     -webkit-background-clip: text!important;
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(to right, rgb(189, 150, 150) 50%, rgba(198, 86, 243, 1));
+    background: linear-gradient(217deg, rgb(117, 44, 253, 1), rgba(214, 160, 110, 1) 70.71%),
+                linear-gradient(127deg, rgba(243, 198, 86, 1), rgba(160, 110, 214, 1) 70.71%),
+                linear-gradient(336deg, rgb(102, 86, 243), rgb(214, 110, 214) 70.71%);
 }
-
+.gradient2 {
+    font-size: 1.1em;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(217deg, rgba(54, 199, 243), rgba(24, 84, 248, 1) 70.71%),
+                linear-gradient(127deg, rgba(67, 193, 252), rgba(243, 198, 86, 1) 70.71%),
+                linear-gradient(336deg, rgba(86, 193, 243), rgba(110, 167, 214, 1) 70.71%);
+}
+.gradient3 {
+    font-size: 1.1em;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(217deg, rgba(178, 253, 155), rgb(17, 145, 60, 1) 70.71%),
+                linear-gradient(127deg, rgb(177, 252, 39), rgba(160, 110, 214, 1) 70.71%),
+                linear-gradient(336deg, rgb(220, 245, 174), rgba(214, 160, 110, 1) 70.71%);              
+}
 /*Footer*/
 footer{
     background-color: rgb(17, 126, 99);;
@@ -219,7 +237,6 @@ div ul:nth-child(1){
     width: 800px;
     height: 950px;
     margin-bottom: inherit;
-    margin-top: 0;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
     font-family: 'La Belle Aurore', sans-serif;
     background-color:rgb(248, 218, 218);     

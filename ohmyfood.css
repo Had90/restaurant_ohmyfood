@@ -25,6 +25,26 @@ header{
     color: rgb(231, 125, 125); 
     font-size: 2em;  
 }
+a{
+    text-decoration: none;
+    color: rgb(238, 171, 28);   
+}
+section{
+    display: flex;
+    flex-flow: wrap row; 
+    justify-content: space-around;
+    margin: 80px 135px 80px 135px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 410px;
+    height: 510px;
+    margin-bottom: inherit;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+}
 /*Animation du bouton*/
 .btn{
     width: 15%;
@@ -90,26 +110,6 @@ header{
                 .menu4:hover {
                 transform:scale(1.25);
                 }
-a{
-    text-decoration: none;
-    color: rgb(238, 171, 28);   
-}
-section{
-    display: flex;
-    flex-flow: wrap row; 
-    justify-content: space-around;
-    margin: 80px 135px 80px 135px;
-}
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    width: 410px;
-    height: 510px;
-    margin-bottom: inherit;
-    box-shadow: 1px 1px 12px rgb(184, 184, 184);
-}
 
 /*Titres et mise en page*/
 .index1{
@@ -119,26 +119,30 @@ section{
     margin: 0 0 0;
     font-size: xx-large;
 }
-
 .menu h2{
     font-weight: lighter;
 }
-p span{
-    color: #000;
-    font-weight: 1000;
+.menu1 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-.article1 span{
-    color: rgb(207, 106, 47);}
-.article1{
-    color: rgb(207, 106, 47);}
-.article2 span{
-    color: rgb(194, 84, 139);}
-.article2{
-    color: rgb(194, 84, 139);}
-.article3 span{
-    color: rgb(100, 41, 194);}
-.article3{
-    color: rgb(100, 41, 194);}
+.menu2 h3{
+    margin: 0;
+    font-family: 'PT Serif', sans-serif;
+    color: rgb(207, 106, 47);
+}
+.menu3 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
+    color: rgba(24, 84, 248);
+}
+.menu4 h3{
+    margin: 0;
+    font-family: 'Kalam', sans-serif;
+    color: rgb(72, 117, 87);
+}
 .menu1{
     font-family: 'Devonshire', cursive, sans-serif;
     background-color:rgb(248, 218, 218); 
@@ -161,27 +165,6 @@ p span{
     background-color: #fff;  
     font-size: 2em; 
     margin-bottom: 0; 
-}
-.menu1 h3{
-    margin: 0;
-    font-family: 'Kalam', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.menu2 h3{
-    margin: 0;
-    font-family: 'PT Serif', sans-serif;
-    color: rgb(207, 106, 47);
-}
-.menu3 h3{
-    margin: 0;
-    font-family: 'Kalam', sans-serif;
-    color: rgba(24, 84, 248);
-}
-.menu4 h3{
-    margin: 0;
-    font-family: 'Kalam', sans-serif;
-    color: rgb(72, 117, 87);
 }
 /*Dégradé de couleurs*/
 .gradient1 {
@@ -233,8 +216,14 @@ div ul:nth-child(2){
 div ul:nth-child(1){
     margin-left: 70px;
 }
-
+/*Mise en page général des menus*/
+.page{
+    margin-top: 0;
+    margin-bottom: 65px;
+    font-size: 1.1em;
+}
 /*2.MENU 1*/
+/*Mise en page*/
 .menu_one{
     display: flex;
     flex-direction: column;
@@ -244,17 +233,32 @@ div ul:nth-child(1){
     height: 950px;
     margin-bottom: inherit;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    font-family: 'La Belle Aurore', sans-serif;
     background-color:rgb(248, 218, 218);     
 }
-.menu_one h3{
-    font-family: 'Itim', sans-serif;
-    margin: 0 0 0;
+span{
+    font-weight: bold;    
 }
-.page{
+.menu_one p{
+    font-family: 'Kalam', cursive, sans-serif;
+}
+/*Titres*/
+.menu_one h2{
+    font-family: 'Devonshire', cursive, sans-serif;
+    font-weight: normal;
+    font-size: 2.3rem;
     margin-top: 0;
-    margin-bottom: 65px;
-    font-size: 1.1em;
+}
+.menu_one h4{
+    font-family: 'Devonshire', cursive, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;  
+}
+.menu_one h3{
+    font-family: 'Kalam', cursive, sans-serif;
+    margin: 0 0 0;   
+}
+.page h1{
+    font-family: 'PT Sans', sans-serif;
 }
 /*MENU 2*/
 .menu_two{
@@ -276,6 +280,19 @@ div ul:nth-child(1){
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+.article1 span{
+    color: rgb(207, 106, 47);}
+.article1{
+    color: rgb(207, 106, 47);}
+.article2 span{
+    color: rgb(194, 84, 139);}
+.article2{
+    color: rgb(194, 84, 139);}
+.article3 span{
+    color: rgb(100, 41, 194);}
+.article3{
+    color: rgb(100, 41, 194);
 }
 /*MENU 3*/
 .menu_three{

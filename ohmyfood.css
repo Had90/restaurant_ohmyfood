@@ -117,15 +117,10 @@ section{
     display: flex;
     justify-content: center;
     margin: 0 0 0;
+    font-size: xx-large;
 }
-.index{
-    font-family: 'Prompt', sans-serif;
-    margin: 0 0 0;
-}
-h1{
-    font-family: 'Itim', sans-serif;
-}
-h2{
+
+.menu h2{
     font-weight: lighter;
 }
 p span{
@@ -169,8 +164,9 @@ p span{
 }
 .menu1 h3{
     margin: 0;
-    font-family: 'Itim', sans-serif;
+    font-family: 'Kalam', sans-serif;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .menu2 h3{
     margin: 0;

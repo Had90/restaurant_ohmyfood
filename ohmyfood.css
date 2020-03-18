@@ -321,6 +321,15 @@ font-weight: lighter;}
     justify-content: space-between;
     align-content: center;
 }
+.menu_three h2{
+    font-family: 'Dancing Script', sans-serif; 
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+.menu_three span{
+    font-family: 'Kalam', sans-serif;
+}
+
 /*MENU 4*/
 .menu_four{
     display: flex;
@@ -362,8 +371,8 @@ background: #000;
 .page a:hover:after {
     width: 100%;
 }
-/*Insertion des traits gauche et droite*/
-.page h3:before, .page h3:after {
+/*Insertion des traits gauche et droite menu 1*/
+.menu_one h3:before, .menu_one h3:after {
     content:''; 
     display:inline-block; 
     vertical-align: middle; 
@@ -371,8 +380,32 @@ background: #000;
     height: 2px; 
     background: #000;
 }
-.page h3:before { margin-right: 3rem }
-.page h3:after { margin-left: 3rem }
+.menu_one h3:before { margin-right: 3rem }
+.menu_one h3:after { margin-left: 3rem }
+
+/*Insertion des traits gauche et droite menu 2*/
+.menu_two h3:before, .menu_two h3:after {
+    content:''; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 8rem; 
+    height: 2px; 
+    background: #000;
+}
+.menu_two h3:before { margin-right: 3rem }
+.menu_two h3:after { margin-left: 3rem }
+
+/*Insertion des traits gauche et droite menu 3*/
+.menu_three h3:before, .menu_three h3:after {
+    content:''; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 8rem; 
+    height: 2px; 
+    background: rgb(24, 84, 248, 1);
+}
+.menu_three h3:before { margin-right: 3rem }
+.menu_three h3:after { margin-left: 3rem }
 
 
 /*4. RESPONSIVE DESIGN*/

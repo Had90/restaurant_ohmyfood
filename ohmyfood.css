@@ -24,6 +24,7 @@ header{
 .fas{
     color: rgb(231, 125, 125); 
     font-size: 2em;  
+    margin: 0 15px;
 }
 a{
     text-decoration: none;
@@ -121,6 +122,7 @@ section{
 }
 .menu h2{
     font-weight: lighter;
+    padding: 10px;
 }
 .menu1 h3{
     margin: 0;
@@ -233,7 +235,7 @@ div ul:nth-child(1){
     height: 950px;
     margin-bottom: inherit;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    background-color:rgb(248, 218, 218);     
+    background-color:rgb(248, 218, 218);   
 }
 
 span{
@@ -241,23 +243,33 @@ span{
 }
 .menu_one p{
     font-family: 'Kalam', cursive, sans-serif;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 0;
 }
-
 /*Titres*/
 .menu_one h2{
     font-family: 'Devonshire', cursive, sans-serif;
     font-weight: normal;
     font-size: 2.3rem;
-    margin-top: 0;
+    margin: 0 0 0;
+
 }
 .menu_one h4{
     font-family: 'Devonshire', cursive, sans-serif;
     font-weight: normal;
-    font-size: 1.5em;  
+    font-size: 1.5em; 
+    display: flex;
+    align-items: center; 
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 .menu_one h3{
     font-family: 'Kalam', cursive, sans-serif;
-    margin: 0 0 0;   
+    margin-top: 40px;
+    margin-bottom: 0;
+
 }
 .page h1{
     font-family: 'PT Sans', sans-serif;
@@ -276,13 +288,7 @@ span{
     background-color:rgb(250, 239, 250); 
     font-family: 'Croissant One', sans-serif;   
 }
-.menu_two hr{
-    border: 1px solid black;
-    width: 16%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
+
 .article1 span{
     color: rgb(207, 106, 47);}
 .article1{
@@ -307,14 +313,26 @@ span{
     margin-bottom: inherit;
     margin-top: 0;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    background-color:rgb(245, 245, 245);     
+    background-color:rgb(245, 245, 245); 
+    font-family: 'Dancing Script', sans-serif;    
 }
-.menu_three hr{
-    border: 1px solid black;
-    width: 16%;
+span{
+    font-weight: bold;    
+}
+.menu_three p{
+    font-family: 'Kalam', cursive, sans-serif;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-between;  
+    margin-bottom: 0;
+}
+.menu_three h3{
+    font-family: 'Kalam', cursive, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.menu_three h2{
+    margin: 0;
 }
 /*MENU 4*/
 .menu_four{
@@ -327,20 +345,29 @@ span{
     margin-bottom: inherit;
     margin-top: 0;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    background-color:rgb(245, 245, 245);     
+    background-color:rgb(245, 245, 245); 
+    font-family: 'Kaushan Script', sans-serif;     
 }
-.menu_four hr{
-    border: 1px solid black;
-    width: 16%;
+span{
+    font-weight: bold;    
+}
+.menu_four p{
+    font-family: 'Kalam', cursive, sans-serif;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-between;  
+    margin-bottom: 0;
+}
+.menu_four h3{
+    font-family: 'Kalam', cursive, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 /*Soulignement au survol de la souris*/
 .page a {
     display: inline;
     position: relative;
-    color: #000;
+    color: rgb(207, 106, 47);
     text-decoration: none;
 }
 .page a:after {
@@ -362,13 +389,28 @@ background: #000;
     content:''; 
     display:inline-block; 
     vertical-align: middle; 
-    width: 8rem; 
+    width: 12rem; 
     height: 2px; 
     background: #000;
 }
 .page h3:before { margin-right: 3rem }
 .page h3:after { margin-left: 3rem }
 
+/*Mentions légales*/
+.mentions{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+    margin-bottom: inherit;
+    margin-top: 0;
+    padding: 20px;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    background-color:rgb(245, 245, 245);     
+}
+.page1{
+    margin-top: 0;
+}
 
 /*4. RESPONSIVE DESIGN*/
 @media screen and (min-width: 1981px) {

@@ -237,7 +237,6 @@ div ul:nth-child(1){
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
     background-color:rgb(248, 218, 218);   
 }
-
 span{
     font-weight: bold;    
 }
@@ -254,7 +253,6 @@ span{
     font-weight: normal;
     font-size: 2.3rem;
     margin: 0 0 0;
-
 }
 .menu_one h4{
     font-family: 'Devonshire', cursive, sans-serif;
@@ -269,7 +267,6 @@ span{
     font-family: 'Kalam', cursive, sans-serif;
     margin-top: 40px;
     margin-bottom: 0;
-
 }
 .page h1{
     font-family: 'PT Sans', sans-serif;
@@ -286,22 +283,51 @@ span{
     margin-top: 0;
     box-shadow: 1px 1px 12px rgb(184, 184, 184);
     background-color:rgb(250, 239, 250); 
-    font-family: 'Croissant One', sans-serif;   
+    font-family: 'Croissant One', sans-serif;      
 }
-
+.menu_two p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 0;
+}
+.page span{
+    font-weight: lighter;
+}
 .article1 span{
     color: rgb(207, 106, 47);}
 .article1{
-    color: rgb(207, 106, 47);}
+    color: rgb(207, 106, 47);
+    font-size: 15px;}
 .article2 span{
     color: rgb(194, 84, 139);}
 .article2{
-    color: rgb(194, 84, 139);}
+    color: rgb(194, 84, 139);
+    font-size: 15px;}
 .article3 span{
     color: rgb(100, 41, 194);}
 .article3{
     color: rgb(100, 41, 194);
+    font-size: 15px;
 }
+/*Titres*/
+.menu_two h3{
+    font-weight: lighter;
+    font-size: large;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.gradient10{
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-top: 0;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(217deg, rgb(117, 44, 253, 1), rgba(207, 106, 47) 70.71%),
+                    linear-gradient(127deg, rgba(243, 198, 86, 1), rgba(160, 110, 214, 1) 70.71%),
+                    linear-gradient(336deg, rgb(102, 86, 243), rgb(214, 110, 214) 70.71%);
+}
+
 /*MENU 3*/
 .menu_three{
     display: flex;
@@ -326,14 +352,25 @@ span{
     justify-content: space-between;  
     margin-bottom: 0;
 }
+/*Titres*/
 .menu_three h3{
     font-family: 'Kalam', cursive, sans-serif;
     margin-top: 40px;
     margin-bottom: 0;
+    font-weight: lighter;
 }
-.menu_three h2{
-    margin: 0;
+.gradient20{
+    font-weight: normal;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 0;
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(217deg, rgba(54, 199, 243), rgba(24, 84, 248, 1) 70.71%),
+                linear-gradient(127deg, rgba(67, 193, 252), rgba(243, 198, 86, 1) 70.71%),
+                linear-gradient(336deg, rgba(86, 193, 243), rgba(110, 167, 214, 1) 70.71%);
 }
+
 /*MENU 4*/
 .menu_four{
     display: flex;
@@ -362,12 +399,32 @@ span{
     font-family: 'Kalam', cursive, sans-serif;
     margin-top: 40px;
     margin-bottom: 0;
+    font-weight: lighter;
+}
+/*Mentions légales*/
+.mentions{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+    margin-bottom: inherit;
+    margin-top: 0;
+    padding: 20px;
+    box-shadow: 1px 1px 12px rgb(184, 184, 184);
+    background-color:rgb(245, 245, 245);     
+}
+.page5{
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.page5 h1{
+    font-family: 'PT Sans', sans-serif;
 }
 /*Soulignement au survol de la souris*/
 .page a {
     display: inline;
     position: relative;
-    color: rgb(207, 106, 47);
+    color: #000;
     text-decoration: none;
 }
 .page a:after {
@@ -389,28 +446,12 @@ background: #000;
     content:''; 
     display:inline-block; 
     vertical-align: middle; 
-    width: 12rem; 
+    width: 170px; 
     height: 2px; 
     background: #000;
 }
-.page h3:before { margin-right: 3rem }
-.page h3:after { margin-left: 3rem }
-
-/*Mentions légales*/
-.mentions{
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    height: 100%;
-    margin-bottom: inherit;
-    margin-top: 0;
-    padding: 20px;
-    box-shadow: 1px 1px 12px rgb(184, 184, 184);
-    background-color:rgb(245, 245, 245);     
-}
-.page1{
-    margin-top: 0;
-}
+.page h3:before { margin-right: 3em }
+.page h3:after { margin-left: 3em }
 
 /*4. RESPONSIVE DESIGN*/
 @media screen and (min-width: 1981px) {
